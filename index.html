@@ -35,12 +35,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $.getJSON(
-        "https://js.adapools.org/pools/7d49f7486660c27f0fded15ba46ba8e3c8d3427aba360936034d7d9d/summary.json",
+        "https://js.cexplorer.io/api-static/pool/pool104ylwjrxvrp87r7769d6g6agu0ydxsn6hgmqjdsrf47e6j2ek46.json",
         function (data) {
           $.each(data.data, function (i, val) {
-            a = new Array("tax_fix", "pledge", "active_stake", "total_stake");
+            a = new Array("tax_fix", "pledge", "stake", "stake_active");
             if (a.includes(i)) val = Math.round(parseInt(val) / 1000000);
-            if (i == "active_stake") val = Math.round(parseInt(val) / 100) / 10;
+            if (i == "stake_active") val = Math.round(parseInt(val) / 100) / 10;
             if (i == "blocks_lifetime")
               val = parseInt(val) + parseInt(data.data.blocks_epoch);
 
@@ -80,7 +80,7 @@
     <section class="info l-content pure-g">
       <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
         <div class="info-item">
-          <p class="info-val"><span id="elmpi_active_stake"></span>k ₳</p>
+          <p class="info-val"><span id="elmpi_stake_active"></span>k ₳</p>
           <p class="info-name">Active Stake</p>
         </div>
       </div>
@@ -95,18 +95,17 @@
       <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
         <div class="info-item">
           <p class="info-val">
-            <span id="elmpi_blocks_lifetime"></span>
+            <span id="elmpi_blocks_epoch"></span>
           </p>
-          <p class="info-name">Blocks Lifetime</p>
+          <p class="info-name">Blocks in epoch</p>
         </div>
       </div>
       <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
         <div class="info-item">
           <p class="info-val">
-            <span id="elmpi_luck_lifetime"></span>
-            %
+            <span id="elmpi_blocks_lifetime"></span>
           </p>
-          <p class="info-name">Lifetime Luck</p>
+          <p class="info-name">Blocks Lifetime</p>
         </div>
       </div>
       <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
