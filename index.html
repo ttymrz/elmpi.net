@@ -6,17 +6,17 @@
     <meta name="description" content="ELMPI Cardano Stake Pool" />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
-      integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
       crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./styles.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -68,23 +68,23 @@
       <div class="l-content">
         <h1 class="banner-head">ELMPI Cardano Stake Pool</h1>
         <p class="banner-subhead">
-          Pool ID HEX (Yoroi):
-          7d49f7486660c27f0fded15ba46ba8e3c8d3427aba360936034d7d9d
+          Pool ID Bech32:
+          pool104ylwjrxvrp87r7769d6g6agu0ydxsn6hgmqjdsrf47e6j2ek46
         </p>
         <p class="banner-subhead">
-          Pool ID Bech32 (Daedalus):
-          pool104ylwjrxvrp87r7769d6g6agu0ydxsn6hgmqjdsrf47e6j2ek46
+          Pool ID HEX:
+          7d49f7486660c27f0fded15ba46ba8e3c8d3427aba360936034d7d9d
         </p>
       </div>
     </section>
     <section class="info l-content pure-g">
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val"><span id="elmpi_stake_active"></span>k ₳</p>
           <p class="info-name">Active Stake</p>
         </div>
       </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val">
             <span id="elmpi_delegators"></span>
@@ -92,15 +92,7 @@
           <p class="info-name">Delegators</p>
         </div>
       </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
-        <div class="info-item">
-          <p class="info-val">
-            <span id="elmpi_blocks_epoch"></span>
-          </p>
-          <p class="info-name">Blocks in epoch</p>
-        </div>
-      </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val">
             <span id="elmpi_blocks_lifetime"></span>
@@ -108,16 +100,7 @@
           <p class="info-name">Blocks Lifetime</p>
         </div>
       </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
-        <div class="info-item">
-          <p class="info-val">
-            <span id="elmpi_roa_lifetime"></span>
-            %
-          </p>
-          <p class="info-name">Lifetime ROA</p>
-        </div>
-      </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val">
             <span id="elmpi_pledge"></span>
@@ -126,7 +109,7 @@
           <p class="info-name">Pledge</p>
         </div>
       </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val">
             <span id="elmpi_tax_ratio"></span>
@@ -135,7 +118,7 @@
           <p class="info-name">Margin</p>
         </div>
       </div>
-      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
+      <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-6">
         <div class="info-item">
           <p class="info-val">
             <span id="elmpi_tax_fix"></span>
@@ -148,33 +131,7 @@
     <section class="l-content">
       <div class="content pure-g">
         <div class="pure-u-1">
-          <h2><i class="bi bi-lightning"></i> Embedded Linux</h2>
-          <p lang="en">
-            Embedded Linux fully optimized for stake pool. This pool uses the
-            cardano-node binary built by the
-            <a href="https://armada-alliance.com/">Armada Alliance</a>. Thank
-            you!
-          </p>
-          <p>
-            Stake Poolに最適化した省エネ軽量組み込みLinuxを構築しています。
-            cardano-nodeは
-            <a href="https://armada-alliance.com/">Armada Alliance</a>
-            のバイナリを使っています。感謝！
-          </p>
-          <p lang="en">
-            I have released a yocto layer that can run the cardano-node.
-          </p>
-          <p>cardano-nodeを動かせるyocto layerを公開しています。</p>
-          <p>
-            <i class="bi bi-github"></i>
-            <a href="https://github.com/ttymrz/meta-pi-cardano"
-              >https://github.com/ttymrz/meta-pi-cardano</a
-            >
-          </p>
-        </div>
-
-        <div class="pure-u-1">
-          <h2><i class="bi bi-phone-vibrate"></i> Mobile Network</h2>
+          <h2><i class="bi bi-lightning"></i> Low power consumption mobile stake pool</h2>
           <p lang="en">
             This pool is a portable stake pool that uses a mobile network. I
             will promote the decentralization of Cardano both geographically and
@@ -191,26 +148,6 @@
 
     <section class="l-content">
       <div class="content pure-g">
-        <div class="pure-u-1 pure-u-sm-1-2">
-          <h2><i class="bi bi-cpu"></i> Equipments</h2>
-          <ul>
-            <li>Raspberry Pi 4B 8GB</li>
-            <li>KIOXIA EXCERIA SSD 480GB</li>
-            <li>NEC Mobile Router</li>
-          </ul>
-        </div>
-        <div class="pure-u-1 pure-u-sm-1-2">
-          <img
-            class="pure-img-responsive"
-            src="./img/elmpi-machine.jpg"
-            alt="elmpi-machine"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="l-content">
-      <div class="content pure-g">
         <div class="pure-u-1 pure-u-sm-2-3 pure-u-lg-2-3">
           <div class="pure-g">
             <div class="pure-u-1">
@@ -218,8 +155,8 @@
               <ul>
                 <li>
                   <a
-                    href="https://adapools.org/pool/7d49f7486660c27f0fded15ba46ba8e3c8d3427aba360936034d7d9d"
-                    >ADApools.org</a
+                    href="https://cexplorer.io/pool/pool104ylwjrxvrp87r7769d6g6agu0ydxsn6hgmqjdsrf47e6j2ek46"
+                    >Cexploer.io</a
                   >
                 </li>
                 <li>
